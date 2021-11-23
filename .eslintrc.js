@@ -8,18 +8,20 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',    
+    'prettier',
+    'prettier/@typescript-eslint',
   ],
   root: true,
   env: {
     node: true,
     jest: true,
   },
-  ignorePatterns: ['.eslintrc.js'],
+  /* ignorePatterns: ['.eslintrc.js'], */
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',    
     '@typescript-eslint/no-explicit-any': 'off',
-    'prettier/prettier': [
+   /*  'prettier/prettier': [
       'error',
       {
         "endOfLine": 'auto',
@@ -31,6 +33,6 @@ module.exports = {
         "jsxBracketSameLine": true,
         "linebreak-style": ["error", "windows"]
       },      
-    ],    
+    ],     */
   },
 };
